@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Coding Ground</title>
+
+</head>
+<body>
+    
+        <h1 id="headin"> <span> < </span> Welcome, Start your coding Journey here <span> /> </span> </h1> 
+
+   <div class="container">
+       <div class="left">
+        <label >HTML</label>
+        <textarea id="html-block" onkeyup="run()"></textarea>
+
+        <label >CSS</label>
+        <textarea id="css-block" onkeyup="run()"></textarea>
+
+        <label >JavaScript</label>
+        <textarea id="js-block" onkeyup="run()"></textarea>
+       </div>
+
+       <div class="right">
+        <h3>Output / Result</h3>
+        <iframe id="output"></iframe>
+       </div>
+   </div>
+
+   <script>
+    
+    function run(){
+      let htmlblock = document.getElementById("html-block").value;
+      let cssblock = document.getElementById("css-block").value;
+      let jsblock = document.getElementById("js-block").value;
+      let output = document.getElementById("output");
+
+      
+  output.contentDocument.body.innerHTML = htmlblock+"<style>"+cssblock+"</style>";
+  output.contentWindow.eval(jsblock);
+
+    }
+   
+    </script>
+
+</body>
+
+</html>
+
+
+  
+  

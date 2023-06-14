@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.code-loader {
+    color: rgb(255, 251, 0);
+    font-family: 'Lemonada', cursive;
+
+    font-weight: bold;
+    font-size: 80px;
+    opacity: 0.8;
+    
+  }
+  
+  .code-loader span {
+    display: inline-block;
+    animation: pulse_414 0.4s alternate infinite ease-in-out;
+  }
+  
+  .code-loader span:nth-child(odd) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes pulse_414 {
+    to {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
+
+  .Hero{
+    background-image: url(./Assets/2wall.jpg);
+    background-position: center;
+    background-attachment: fixed;
+   
+    
+}
+
+
+.cachy{
+  
+  text-align: center;
+  margin:  auto;
+  
+  
+}
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.col1{
+  margin-top: 40px;
+}
+
+
+#Act{
+  color: aliceblue;
+  font-family: 'Solitreo', cursive;
+  font-size: 50px;
+  margin-left: 40px;
+ 
+  
+}
+
+
+#Bct{
+  color: aliceblue;
+  font-family: 'Solitreo', cursive;
+  margin-left:35px;
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+
+.Avatar{
+  width: 600px;
+  height: 530px;
+  margin-left: 75px;
+  padding: 3px;
+}
+
+
+
+button {
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: 3px solid yellow;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px yellow;
+  margin-left: 50px;
+  margin-bottom: 120px;
+  width: 170px;
+}
+
+button:hover {
+  transform: translate(5px, -5px);
+}
+
+
+/* media queries Start from here */
+
+@media only screen and (max-width: 600px) {
+  .Hero  {
+    width: fit-content;
+    height: 100vh;
+   
+  }
+
+  .cachy{
+    width: fit-content;
+    text-align: start;
+  }
+
+ #Title-head {
+    font-size: 40px;
+  }
+
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Act{
+    font-size: 0px;
+  }
+
+  #Bct{
+    font-size: 0px;
+  }
+
+  .Avatar{
+    display: flex ;
+    justify-self: start;
+  }
+  
+}
